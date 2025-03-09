@@ -1,4 +1,4 @@
-package com.java.thread;
+package com.java.thread.implementthread;
 
 public class ExtendThread {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.java.thread;
+package com.java.thread.executorservice;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -12,11 +12,13 @@ public class ScheduleExecutorService {
                 5,
                 5,
                 TimeUnit.SECONDS);
+
         scheduler.scheduleWithFixedDelay(
                 () -> System.out.println("Task executed after every 5 seconds !"),
                 5,
                 5,
                 TimeUnit.SECONDS);
+
         scheduler.schedule(
                 () -> {
                     System.out.println("Shutting down...");
